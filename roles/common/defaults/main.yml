@@ -1,0 +1,2 @@
+git_name: "{{ vault_git_name }}"
+git_email: "{{ vault_git_email }}"
