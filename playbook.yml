@@ -4,3 +4,9 @@
   roles: 
     - common
     - python
+    - vagrant
+    - nodejs
+  vars_prompt:
+    - name: ansible_become_pass
+      prompt: "Sudo password"
+      private: yes
