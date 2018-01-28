@@ -1,6 +1,6 @@
-- import_tasks: git.yml
 - name: Installs base packages
   apt: pkg="{{ item }}" state=latest update_cache=yes
   with_items:
     - apt-transport-https
     - curl
+    - git

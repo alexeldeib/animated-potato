@@ -1,6 +1,0 @@
-- name: Import vars
-  include_vars: ../defaults/vault.yml
-
-- name: Install git
-  apt:
-    pkg: git
