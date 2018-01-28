@@ -1,3 +1,9 @@
+- name: Install pip3 and pip
+  apt: name="{{ item }}"
+  with_items: 
+    - python3-pip
+    - python-pip
+
 - name: Installs python packages
   pip: name="{{ item }}"
   with_items:
