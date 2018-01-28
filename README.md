@@ -7,6 +7,7 @@ Ansible playbooks to bootstrap Ubuntu with development tools. Currently installs
 - python-pip
 - virtualenv
 - virtualenvwrapper
+- autoenv
 - vagrant
 - nodejs 8.x (LTS)
 - vscode
