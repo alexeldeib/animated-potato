@@ -1,0 +1,16 @@
+- name: Add Microsoft apt key.
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    id: "BE1229CF"
+    state: present
+
+- name: Add VSCode repo
+  apt_repository:
+    repo: "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+    state: present
+
+- name: Update cache and install VSCode
+  apt: 
+    pkg: "code"
+    state: present
+    update_cache: yes

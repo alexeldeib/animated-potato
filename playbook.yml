@@ -6,6 +6,7 @@
     - python
     - vagrant
     - nodejs
+    - vscode
   vars_prompt:
     - name: ansible_become_pass
       prompt: "Sudo password"

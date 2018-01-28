@@ -4,9 +4,3 @@
 - name: Install git
   apt:
     pkg: git
-
-- name: Configure git
-  command: "git config --global user.name {{ git_name }}"
-
-- name: Configure git
-  command: "git config --global user.email {{ git_email }}"
