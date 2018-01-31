@@ -11,3 +11,4 @@ Ansible playbooks to bootstrap Ubuntu with development tools. Currently installs
 - vagrant
 - nodejs 8.x (LTS)
 - vscode
+- vim
