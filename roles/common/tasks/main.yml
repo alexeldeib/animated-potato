@@ -1,7 +1,16 @@
 - name: Installs base packages
-  apt: pkg="{{ item }}" state=latest update_cache=yes
-  with_items:
+  apt:
+    name: "{{ packages }}"
+    state: latest
+    update_cache: yes
+  vars:
+    packages:
     - apt-transport-https
     - curl
     - git
-    - vim
+
+- name: install docker
+  shell: snap install docker --classic
+
+- name: install kubectl
+  shell: snap install kubectl 
