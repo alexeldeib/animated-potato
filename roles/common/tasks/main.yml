@@ -8,9 +8,17 @@
     - apt-transport-https
     - curl
     - git
+    - xclip
 
 - name: install docker
   shell: snap install docker --classic
 
 - name: install kubectl
-  shell: snap install kubectl 
+  shell: snap install kubectl --classic
+
+- name: enable passwordless sudo
+  copy: 
+    content: |
+      ace ALL=(ALL) NOPASSWD:ALL
+    dest: /etc/sudoers.d/ace
+    validate: /usr/sbin/visudo -cf %s
