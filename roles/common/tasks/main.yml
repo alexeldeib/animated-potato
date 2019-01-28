@@ -11,7 +11,7 @@
     - xclip
 
 - name: install docker
-  shell: snap install docker --classic
+  shell: snap install docker
 
 - name: install kubectl
   shell: snap install kubectl --classic
