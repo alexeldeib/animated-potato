@@ -3,12 +3,8 @@
 Ansible playbooks to bootstrap Ubuntu with development tools. Currently installs the following tools: 
 - curl
 - git
-- python3-pip
-- python-pip
-- virtualenv
-- virtualenvwrapper
-- autoenv
-- vagrant
-- nodejs 8.x (LTS)
-- vscode
-- vim
+- xclip
+- kubectl
+- docker
+- nodejs 8.x (LTS) (not enabled currently)
+- vscode (not enabled currently)
